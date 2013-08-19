@@ -14,9 +14,9 @@ jeefuse-web
     <li>基于spring security3 的资源权限管理.</li>
     
     
-    <hr>
+    <br>
 
-Document:https://github.com/jeefuse/jeefuse-web/wiki
-source: https://github.com/jeefuse/jeefuse-web
+Document:https://github.com/jeefuse/jeefuse-web/wiki<br>
+source: https://github.com/jeefuse/jeefuse-web.git
 
 
