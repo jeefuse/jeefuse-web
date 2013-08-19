@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<functions xmlns="http://www.goolov.org/schema/function" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.goolov.org/schema/function goolov.mda.function.xsd">
+	<function>
+		<packageId>P_system_security_gsysRole</packageId>
+		<id>F_system_security_gsysRole_manage</id>
+		<name>GsysRole manage</name>
+		<descript>GsysRole manage</descript>
+		<url>/system/security/gsysRole/manage.vhtml</url>
+		<type>action</type>
+		<orderNum>1</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRole</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysRole</packageId>
+		<id>F_system_security_gsysRole_input</id>
+		<name>GsysRole input</name>
+		<descript>GsysRole input</descript>
+		<url>/system/security/gsysRole/input.vhtml</url>
+		<type>action</type>
+		<orderNum>2</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRole</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysRole</packageId>
+		<id>F_system_security_gsysRole_saveOutJson</id>
+		<name>GsysRole edit</name>
+		<descript>GsysRole edit</descript>
+		<url>/system/security/gsysRole/saveOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>3</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRole</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysRole</packageId>
+		<id>F_system_security_gsysRole_getOutJson</id>
+		<name>GsysRole getOutJson</name>
+		<descript>GsysRole getOutJson</descript>
+		<url>/system/security/gsysRole/getOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>4</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRole</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysRole</packageId>
+		<id>F_system_security_gsysRole_listOutJson</id>
+		<name>GsysRole listOutJson</name>
+		<descript>GsysRole listOutJson</descript>
+		<url>/system/security/gsysRole/listOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>5</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRole</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysRole</packageId>
+		<id>F_system_security_gsysRole_saveOutJson</id>
+		<name>GsysRole saveOutJson</name>
+		<descript>GsysRole saveOutJson</descript>
+		<url>/system/security/gsysRole/saveOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>6</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRole</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysRole</packageId>
+		<id>F_system_security_gsysRole_deleteOutJson</id>
+		<name>GsysRole deleteOutJson</name>
+		<descript>GsysRole deleteOutJson</descript>
+		<url>/system/security/gsysRole/deleteOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>7</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRole</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysRole</packageId>
+		<id>F_system_security_gsysRole_deleteAllOutJson</id>
+		<name>GsysRole deleteAllOutJson</name>
+		<descript>GsysRole deleteAllOutJson</descript>
+		<url>/system/security/gsysRole/deleteAllOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>8</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRole</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysRole</packageId>
+		<id>F_system_security_gsysRole_deleteAllOutJson</id>
+		<name>GsysRole exportFile</name>
+		<descript>GsysRole exportFile</descript>
+		<url>/system/security/gsysRole/deleteAllOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>9</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRole</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysRole</packageId>
+		<id>F_system_security_gsysRole_importExcelFile</id>
+		<name>GsysRole importExcelFile</name>
+		<descript>GsysRole importExcelFile</descript>
+		<url>/system/security/gsysRole/importExcelFile.vhtml</url>
+		<type>action</type>
+		<orderNum>10</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRole</qualifyName>
+	</function>
+	
+</functions>

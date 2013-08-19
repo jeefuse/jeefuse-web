@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<functions xmlns="http://www.goolov.org/schema/function" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.goolov.org/schema/function goolov.mda.function.xsd">
+	<function>
+		<id>>P_system_code_gsysCodevalue</id>
+		<name>com.jeefuse.system.code</name>
+		<descript>com.jeefuse.system.code</descript>
+		<type>menu</type>
+		<orderNum>1</orderNum>
+	</function>
+	<function>
+		<packageId>P_system_code_gsysCodevalue</packageId>
+		<id>F_system_code_gsysCodevalue_manage</id>
+		<name>GsysCodevalue manage</name>
+		<descript>GsysCodevalue manage</descript>
+		<url>/system/code/gsysCodevalue/manage.vhtml</url>
+		<type>action</type>
+		<orderNum>1</orderNum>
+		<qualifyName>com.jeefuse.system.code.model.GsysCodevalue</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_code_gsysCodevalue</packageId>
+		<id>F_system_code_gsysCodevalue_input</id>
+		<name>GsysCodevalue input</name>
+		<descript>GsysCodevalue input</descript>
+		<url>/system/code/gsysCodevalue/input.vhtml</url>
+		<type>action</type>
+		<orderNum>2</orderNum>
+		<qualifyName>com.jeefuse.system.code.model.GsysCodevalue</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_code_gsysCodevalue</packageId>
+		<id>F_system_code_gsysCodevalue_saveOutJson</id>
+		<name>GsysCodevalue edit</name>
+		<descript>GsysCodevalue edit</descript>
+		<url>/system/code/gsysCodevalue/saveOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>3</orderNum>
+		<qualifyName>com.jeefuse.system.code.model.GsysCodevalue</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_code_gsysCodevalue</packageId>
+		<id>F_system_code_gsysCodevalue_getOutJson</id>
+		<name>GsysCodevalue getOutJson</name>
+		<descript>GsysCodevalue getOutJson</descript>
+		<url>/system/code/gsysCodevalue/getOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>4</orderNum>
+		<qualifyName>com.jeefuse.system.code.model.GsysCodevalue</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_code_gsysCodevalue</packageId>
+		<id>F_system_code_gsysCodevalue_listOutJson</id>
+		<name>GsysCodevalue listOutJson</name>
+		<descript>GsysCodevalue listOutJson</descript>
+		<url>/system/code/gsysCodevalue/listOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>5</orderNum>
+		<qualifyName>com.jeefuse.system.code.model.GsysCodevalue</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_code_gsysCodevalue</packageId>
+		<id>F_system_code_gsysCodevalue_saveOutJson</id>
+		<name>GsysCodevalue saveOutJson</name>
+		<descript>GsysCodevalue saveOutJson</descript>
+		<url>/system/code/gsysCodevalue/saveOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>6</orderNum>
+		<qualifyName>com.jeefuse.system.code.model.GsysCodevalue</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_code_gsysCodevalue</packageId>
+		<id>F_system_code_gsysCodevalue_deleteOutJson</id>
+		<name>GsysCodevalue deleteOutJson</name>
+		<descript>GsysCodevalue deleteOutJson</descript>
+		<url>/system/code/gsysCodevalue/deleteOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>7</orderNum>
+		<qualifyName>com.jeefuse.system.code.model.GsysCodevalue</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_code_gsysCodevalue</packageId>
+		<id>F_system_code_gsysCodevalue_deleteAllOutJson</id>
+		<name>GsysCodevalue deleteAllOutJson</name>
+		<descript>GsysCodevalue deleteAllOutJson</descript>
+		<url>/system/code/gsysCodevalue/deleteAllOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>8</orderNum>
+		<qualifyName>com.jeefuse.system.code.model.GsysCodevalue</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_code_gsysCodevalue</packageId>
+		<id>F_system_code_gsysCodevalue_deleteAllOutJson</id>
+		<name>GsysCodevalue exportFile</name>
+		<descript>GsysCodevalue exportFile</descript>
+		<url>/system/code/gsysCodevalue/deleteAllOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>9</orderNum>
+		<qualifyName>com.jeefuse.system.code.model.GsysCodevalue</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_code_gsysCodevalue</packageId>
+		<id>F_system_code_gsysCodevalue_importExcelFile</id>
+		<name>GsysCodevalue importExcelFile</name>
+		<descript>GsysCodevalue importExcelFile</descript>
+		<url>/system/code/gsysCodevalue/importExcelFile.vhtml</url>
+		<type>action</type>
+		<orderNum>10</orderNum>
+		<qualifyName>com.jeefuse.system.code.model.GsysCodevalue</qualifyName>
+	</function>
+	
+</functions>

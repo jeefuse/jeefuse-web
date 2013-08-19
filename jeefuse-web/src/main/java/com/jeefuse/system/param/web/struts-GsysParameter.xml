@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    
+	<!-- 系统参数 action manager-->
+	<package name="gsysParameter" extends="system"  namespace="/system/param/gsysParameter">
+        <default-class-ref class="com.jeefuse.system.param.web.action.GsysParameterAction"/>
+        
+        <action name="manage" method="manage">
+            <result name="success">/WEB-INF/content/system/param/gsysParameter/gsysParameter-manager.jsp</result>
+        </action>
+        <action name="input" method="edit">
+        	<result name="success">/WEB-INF/content/system/param/gsysParameter/gsysParameter-input.jsp</result>
+        </action>
+        <action name="edit" method="edit">
+        	<result name="success">/WEB-INF/content/system/param/gsysParameter/gsysParameter-input.jsp</result>
+        </action>
+        <action name="getOutJson" method="getOutJson"/>
+        <action name="listOutJson" method="listOutJson"/>
+        <action name="saveOutJson" method="saveOutJson"/>
+        <action name="updateOutJson" method="updateOutJson"/>
+        <action name="deleteOutJson" method="deleteOutJson"/>
+        <action name="deleteAllOutJson" method="deleteAllOutJson"/>
+		 <!-- import export -->
+        <action name="exportExcelFile" method="exportExcelFile"/>
+        <action name="importExcelFile" method="importExcelFile">
+        	<result name="success">/WEB-INF/content/system/param/gsysParameter/gsysParameter-importExcel.jsp</result>
+        </action>
+        <action name="importExcelFileProcess" method="importExcelFileProcess"/>
+	</package>
+	
+</struts>

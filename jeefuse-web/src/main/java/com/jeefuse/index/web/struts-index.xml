@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    
+	<package name="system_index" extends="system"  namespace="/system">
+       <default-class-ref class="com.jeefuse.index.web.action.IndexAction"/>
+        
+        <!--系统登录页-->
+        <action name="login" method="login">
+			<result name="login">/WEB-INF/content/system/login.jsp</result>
+        	<result name="success" type="chain">main</result>
+        </action>
+        
+       <!--系统主界面--> 
+       <action name="main" method="main">
+       		<result name="leftMenu">/WEB-INF/content/system/main.jsp</result>
+       		<result name="topMenu">/WEB-INF/content/system/main-topMenu.jsp</result>
+       		<result name="topLeftMenu">/WEB-INF/content/system/main-topLeftMenu.jsp</result>
+       </action>
+       
+       <!--首页-->
+       <action name="index" method="index">
+       		<result>/WEB-INF/content/system/index.jsp</result>
+       </action>
+       
+       <!-- 获取用户功能菜单树 -->
+       <action name="listTreeMenuOutJson" method="listTreeMenuOutJson"/>
+
+	</package>
+	
+</struts>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    
+	<!-- GsysUser action manager-->
+	<package name="gsysUser" extends="system"  namespace="/system/security/gsysUser">
+        <default-class-ref class="com.jeefuse.system.security.web.action.GsysUserAction"/>
+        
+        <action name="manage" >
+            <result name="success">/WEB-INF/content/system/security/gsysUser/gsysUser-manager.jsp</result>
+        </action>
+        <action name="input" method="edit">
+        	<result name="success">/WEB-INF/content/system/security/gsysUser/gsysUser-input.jsp</result>
+        </action>
+        <action name="edit" method="edit">
+        	<result name="success">/WEB-INF/content/system/security/gsysUser/gsysUser-input.jsp</result>
+        </action>
+        <action name="getOutJson" method="getOutJson"/>
+        <action name="listOutJson" method="listOutJson"/>
+        <action name="saveOutJson" method="saveOutJson"/>
+        <action name="deleteOutJson" method="deleteOutJson"/>
+        <action name="deleteAllOutJson" method="deleteAllOutJson"/>
+        <action name="exportExcelFile" method="exportExcelFile"/>
+        <action name="importExcelFile" method="importExcelFile">
+        	<result name="success">/WEB-INF/content/system/security/gsysUser/gsysUser-importExcel.jsp</result>
+        </action>
+        <action name="importExcelFileProcess" method="importExcelFileProcess"/>
+        <!-- 检查登录名是否唯一  -->
+        <action name="checkLoginName" method="checkLoginName"/>
+        <action name="listForSelectOutJson" method="listForSelectOutJson"/>
+        <!-- 用户身份审核 -->
+        <action name="verify" method="verify">
+            <result name="success">/WEB-INF/content/system/security/gsysUser/gsysUser-verify.jsp</result>
+       	</action>
+		<action name="identityAudit" method="identityAudit">
+			<result name="success">/WEB-INF/content/system/security/gsysUser/gsysUser-identityAudit.jsp</result>
+		</action>
+		<action name="identityAuditSubmit" method="identityAuditSubmit"/>
+		
+		<!--修改密码-->
+		 <action name="modifyPassword" method="modifyPassword">
+        	<result name="success">/WEB-INF/content/system/security/gsysUser/gsysUser-modifyPassword.jsp</result>
+        </action>
+        <action name="modifyPasswordSave" method="modifyPasswordSave"/>
+        <!--修改我的密码-->
+		 <action name="modifyMyPassword" method="modifyMyPassword">
+        	<result name="success">/WEB-INF/content/system/security/gsysUser/gsysUser-modifyMyPassword.jsp</result>
+        </action>
+        <action name="modifyMyPasswordSave" method="modifyMyPasswordSave"/>
+	</package>
+	
+</struts>

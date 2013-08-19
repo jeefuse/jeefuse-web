@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    
+	<!-- 操作日志 action manager-->
+	<package name="gsysOperatelog" extends="system"  namespace="/system/log/gsysOperatelog">
+        <default-class-ref class="com.jeefuse.system.log.web.action.GsysOperatelogAction"/>
+        
+        <action name="manage" method="manage">
+            <result name="success">/WEB-INF/content/system/log/gsysOperatelog/gsysOperatelog-manager.jsp</result>
+        </action>
+        <action name="input" method="edit">
+        	<result name="success">/WEB-INF/content/system/log/gsysOperatelog/gsysOperatelog-input.jsp</result>
+        </action>
+        <action name="edit" method="edit">
+        	<result name="success">/WEB-INF/content/system/log/gsysOperatelog/gsysOperatelog-input.jsp</result>
+        </action>
+        <action name="getOutJson" method="getOutJson"/>
+        <action name="listOutJson" method="listOutJson"/>
+        <action name="saveOutJson" method="saveOutJson"/>
+        <action name="updateOutJson" method="updateOutJson"/>
+        <action name="deleteOutJson" method="deleteOutJson"/>
+        <action name="deleteAllOutJson" method="deleteAllOutJson"/>
+		 <!-- import export -->
+        <action name="exportExcelFile" method="exportExcelFile"/>
+        <action name="importExcelFile" method="importExcelFile">
+        	<result name="success">/WEB-INF/content/system/log/gsysOperatelog/gsysOperatelog-importExcel.jsp</result>
+        </action>
+        <action name="importExcelFileProcess" method="importExcelFileProcess"/>
+	</package>
+	
+</struts>

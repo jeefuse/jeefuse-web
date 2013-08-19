@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    
+	<!-- GsysRole action manager-->
+	<package name="gsysRole" extends="system"  namespace="/system/security/gsysRole">
+        <default-class-ref class="com.jeefuse.system.security.web.action.GsysRoleAction"/>
+        
+        <action name="manage" method="manage">
+            <result name="success">/WEB-INF/content/system/security/gsysRole/gsysRole-manager.jsp</result>
+        </action>
+        <action name="edit" method="edit">
+        	<result name="success">/WEB-INF/content/system/security/gsysRole/gsysRole-input.jsp</result>
+        </action>
+        <action name="getOutJson" method="getOutJson"/>
+        <action name="listOutJson" method="listOutJson"/>
+        <action name="saveOutJson" method="saveOutJson"/>
+        <action name="updateOutJson" method="updateOutJson"/>
+        <action name="deleteOutJson" method="deleteOutJson"/>
+        <action name="deleteAllOutJson" method="deleteAllOutJson"/>
+        <action name="exportExcelFile" method="exportExcelFile"/>
+        <action name="importExcelFile" method="importExcelFile">
+        	<result name="success">/WEB-INF/content/system/security/gsysRole/gsysRole-importExcel.jsp</result>
+        </action>
+        <action name="importExcelFileProcess" method="importExcelFileProcess"/>
+        
+        <action name="listRelGsysFunctionCheckOutJson" method="listRelGsysFunctionCheckOutJson"/>
+        <action name="listRelGsysFunctionCheckSaveOutJson" method="listRelGsysFunctionCheckSaveOutJson"/>
+	</package>
+	
+</struts>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<functions>
+	<function>
+		<id>P_system_security_gsysFunction</id>
+		<name>GsysFunction manage</name>
+		<descript>GsysFunction manage</descript>
+		<type>menu</type>
+		<orderNum>1</orderNum>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysFunction</packageId>
+		<id>F_system_security_gsysFunction_manage</id>
+		<name>GsysFunction manage</name>
+		<descript>GsysFunction manage</descript>
+		<url>/system/security/gsysFunction/manage.vhtml</url>
+		<type>action</type>
+		<orderNum>1</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysFunction</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysFunction</packageId>
+		<id>F_system_security_gsysFunction_input</id>
+		<name>GsysFunction input</name>
+		<descript>GsysFunction input</descript>
+		<url>/system/security/gsysFunction/input.vhtml</url>
+		<type>action</type>
+		<orderNum>2</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysFunction</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysFunction</packageId>
+		<id>F_system_security_gsysFunction_saveOutJson</id>
+		<name>GsysFunction edit</name>
+		<descript>GsysFunction edit</descript>
+		<url>/system/security/gsysFunction/saveOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>3</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysFunction</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysFunction</packageId>
+		<id>F_system_security_gsysFunction_getOutJson</id>
+		<name>GsysFunction getOutJson</name>
+		<descript>GsysFunction getOutJson</descript>
+		<url>/system/security/gsysFunction/getOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>4</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysFunction</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysFunction</packageId>
+		<id>F_system_security_gsysFunction_listOutJson</id>
+		<name>GsysFunction listOutJson</name>
+		<descript>GsysFunction listOutJson</descript>
+		<url>/system/security/gsysFunction/listOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>5</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysFunction</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysFunction</packageId>
+		<id>F_system_security_gsysFunction_saveOutJson</id>
+		<name>GsysFunction saveOutJson</name>
+		<descript>GsysFunction saveOutJson</descript>
+		<url>/system/security/gsysFunction/saveOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>6</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysFunction</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysFunction</packageId>
+		<id>F_system_security_gsysFunction_deleteOutJson</id>
+		<name>GsysFunction deleteOutJson</name>
+		<descript>GsysFunction deleteOutJson</descript>
+		<url>/system/security/gsysFunction/deleteOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>7</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysFunction</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysFunction</packageId>
+		<id>F_system_security_gsysFunction_deleteAllOutJson</id>
+		<name>GsysFunction deleteAllOutJson</name>
+		<descript>GsysFunction deleteAllOutJson</descript>
+		<url>/system/security/gsysFunction/deleteAllOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>8</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysFunction</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysFunction</packageId>
+		<id>F_system_security_gsysFunction_deleteAllOutJson</id>
+		<name>GsysFunction exportFile</name>
+		<descript>GsysFunction exportFile</descript>
+		<url>/system/security/gsysFunction/deleteAllOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>9</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysFunction</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysFunction</packageId>
+		<id>F_system_security_gsysFunction_importExcelFile</id>
+		<name>GsysFunction importExcelFile</name>
+		<descript>GsysFunction importExcelFile</descript>
+		<url>/system/security/gsysFunction/importExcelFile.vhtml</url>
+		<type>action</type>
+		<orderNum>10</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysFunction</qualifyName>
+	</function>
+</functions>

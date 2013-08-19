@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<functions xmlns="http://www.goolov.org/schema/function" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.goolov.org/schema/function goolov.mda.function.xsd">
+	<function>
+		<id>P_system_param</id>
+		<name>com.jeefuse.system.param管理</name>
+		<descript>com.jeefuse.system.param管理</descript>
+		<type>menu</type>
+		<orderNum>1</orderNum>
+	</function>
+	<function>
+		<packageId>P_system_param</packageId>
+		<id>P_system_param_gsysParameter</id>
+		<name>系统参数管理</name>
+		<descript>系统参数管理</descript>
+		<type>menu</type>
+		<orderNum>1</orderNum>
+	</function>
+	<function>
+		<packageId>P_system_param_gsysParameter</packageId>
+		<id>F_system_param_gsysParameter_manage</id>
+		<name>系统参数 manage</name>
+		<descript>系统参数 manage</descript>
+		<url>/system/param/gsysParameter/manage.vhtml</url>
+		<type>action</type>
+		<orderNum>1</orderNum>
+		<qualifyName>com.jeefuse.system.param.model.GsysParameter</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_param_gsysParameter</packageId>
+		<id>F_system_param_gsysParameter_input</id>
+		<name>系统参数 input</name>
+		<descript>系统参数 input</descript>
+		<url>/system/param/gsysParameter/input.vhtml</url>
+		<type>action</type>
+		<orderNum>2</orderNum>
+		<qualifyName>com.jeefuse.system.param.model.GsysParameter</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_param_gsysParameter</packageId>
+		<id>F_system_param_gsysParameter_saveOutJson</id>
+		<name>系统参数 edit</name>
+		<descript>系统参数 edit</descript>
+		<url>/system/param/gsysParameter/saveOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>3</orderNum>
+		<qualifyName>com.jeefuse.system.param.model.GsysParameter</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_param_gsysParameter</packageId>
+		<id>F_system_param_gsysParameter_getOutJson</id>
+		<name>系统参数 getOutJson</name>
+		<descript>系统参数 getOutJson</descript>
+		<url>/system/param/gsysParameter/getOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>4</orderNum>
+		<qualifyName>com.jeefuse.system.param.model.GsysParameter</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_param_gsysParameter</packageId>
+		<id>F_system_param_gsysParameter_listOutJson</id>
+		<name>系统参数 listOutJson</name>
+		<descript>系统参数 listOutJson</descript>
+		<url>/system/param/gsysParameter/listOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>5</orderNum>
+		<qualifyName>com.jeefuse.system.param.model.GsysParameter</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_param_gsysParameter</packageId>
+		<id>F_system_param_gsysParameter_saveOutJson</id>
+		<name>系统参数 saveOutJson</name>
+		<descript>系统参数 saveOutJson</descript>
+		<url>/system/param/gsysParameter/saveOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>6</orderNum>
+		<qualifyName>com.jeefuse.system.param.model.GsysParameter</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_param_gsysParameter</packageId>
+		<id>F_system_param_gsysParameter_deleteOutJson</id>
+		<name>系统参数 deleteOutJson</name>
+		<descript>系统参数 deleteOutJson</descript>
+		<url>/system/param/gsysParameter/deleteOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>7</orderNum>
+		<qualifyName>com.jeefuse.system.param.model.GsysParameter</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_param_gsysParameter</packageId>
+		<id>F_system_param_gsysParameter_deleteAllOutJson</id>
+		<name>系统参数 deleteAllOutJson</name>
+		<descript>系统参数 deleteAllOutJson</descript>
+		<url>/system/param/gsysParameter/deleteAllOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>8</orderNum>
+		<qualifyName>com.jeefuse.system.param.model.GsysParameter</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_param_gsysParameter</packageId>
+		<id>F_system_param_gsysParameter_deleteAllOutJson</id>
+		<name>系统参数 exportFile</name>
+		<descript>系统参数 exportFile</descript>
+		<url>/system/param/gsysParameter/deleteAllOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>9</orderNum>
+		<qualifyName>com.jeefuse.system.param.model.GsysParameter</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_param_gsysParameter</packageId>
+		<id>F_system_param_gsysParameter_importExcelFile</id>
+		<name>系统参数 importExcelFile</name>
+		<descript>系统参数 importExcelFile</descript>
+		<url>/system/param/gsysParameter/importExcelFile.vhtml</url>
+		<type>action</type>
+		<orderNum>10</orderNum>
+		<qualifyName>com.jeefuse.system.param.model.GsysParameter</qualifyName>
+	</function>
+	
+</functions>

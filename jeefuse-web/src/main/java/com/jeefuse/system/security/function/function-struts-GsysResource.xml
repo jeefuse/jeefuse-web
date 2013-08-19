@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<functions xmlns="http://www.goolov.org/schema/function" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.goolov.org/schema/function goolov.mda.function.xsd">
+	<function>
+		<packageId>P_system_security_gsysResource</packageId>
+		<id>F_system_security_gsysResource_manage</id>
+		<name>GsysResource manage</name>
+		<descript>GsysResource manage</descript>
+		<url>/system/security/gsysResource/manage.vhtml</url>
+		<type>action</type>
+		<orderNum>1</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysResource</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysResource</packageId>
+		<id>F_system_security_gsysResource_input</id>
+		<name>GsysResource input</name>
+		<descript>GsysResource input</descript>
+		<url>/system/security/gsysResource/input.vhtml</url>
+		<type>action</type>
+		<orderNum>2</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysResource</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysResource</packageId>
+		<id>F_system_security_gsysResource_saveOutJson</id>
+		<name>GsysResource edit</name>
+		<descript>GsysResource edit</descript>
+		<url>/system/security/gsysResource/saveOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>3</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysResource</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysResource</packageId>
+		<id>F_system_security_gsysResource_getOutJson</id>
+		<name>GsysResource getOutJson</name>
+		<descript>GsysResource getOutJson</descript>
+		<url>/system/security/gsysResource/getOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>4</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysResource</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysResource</packageId>
+		<id>F_system_security_gsysResource_listOutJson</id>
+		<name>GsysResource listOutJson</name>
+		<descript>GsysResource listOutJson</descript>
+		<url>/system/security/gsysResource/listOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>5</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysResource</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysResource</packageId>
+		<id>F_system_security_gsysResource_saveOutJson</id>
+		<name>GsysResource saveOutJson</name>
+		<descript>GsysResource saveOutJson</descript>
+		<url>/system/security/gsysResource/saveOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>6</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysResource</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysResource</packageId>
+		<id>F_system_security_gsysResource_deleteOutJson</id>
+		<name>GsysResource deleteOutJson</name>
+		<descript>GsysResource deleteOutJson</descript>
+		<url>/system/security/gsysResource/deleteOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>7</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysResource</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysResource</packageId>
+		<id>F_system_security_gsysResource_deleteAllOutJson</id>
+		<name>GsysResource deleteAllOutJson</name>
+		<descript>GsysResource deleteAllOutJson</descript>
+		<url>/system/security/gsysResource/deleteAllOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>8</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysResource</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysResource</packageId>
+		<id>F_system_security_gsysResource_deleteAllOutJson</id>
+		<name>GsysResource exportFile</name>
+		<descript>GsysResource exportFile</descript>
+		<url>/system/security/gsysResource/deleteAllOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>9</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysResource</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysResource</packageId>
+		<id>F_system_security_gsysResource_importExcelFile</id>
+		<name>GsysResource importExcelFile</name>
+		<descript>GsysResource importExcelFile</descript>
+		<url>/system/security/gsysResource/importExcelFile.vhtml</url>
+		<type>action</type>
+		<orderNum>10</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysResource</qualifyName>
+	</function>
+	
+</functions>

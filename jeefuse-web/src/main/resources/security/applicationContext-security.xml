@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:s="http://www.springframework.org/schema/security"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.0.xsd"
+	default-lazy-init="true">
+	<description>使用SpringSecurity的安全配置文件</description>
+
+	<!-- http安全配置 -->
+	<s:http entry-point-ref="authenticationEntryPoint" >
+		<s:access-denied-handler ref="accessDeniedHandler"/>  
+		<s:logout invalidate-session="true" logout-success-url="/system/main.vhtml" logout-url="/goolov_security_logout"  />  
+		<s:custom-filter before="FILTER_SECURITY_INTERCEPTOR" ref="resourceSecurityInterceptor" />
+		<s:custom-filter position="FORM_LOGIN_FILTER" ref="formLoginFilter" />
+		<!-- 用户登录Session控制-->  
+		<!--		<s:session-management invalid-session-url="/system/login.vhtml"  session-authentication-error-url="/system/login.vhtml?error=5">-->
+		<!--		 true限制不允许第二个用户登录,false第二个登陆用户踢掉前一个登陆用户  -->
+		<!--			<s:concurrency-control max-sessions="1" error-if-maximum-exceeded="true" expired-url="/system/login.vhtml?error=3" />-->
+		<!--		</s:session-management>-->
+		<s:remember-me key="e37f4bwe-0c45-11dd-bd0b-0800212c9a90" />
+	</s:http>
+	
+	
+	<!--未登录切入点,若是ajax请求,则返回json格式的登录提示信息-->
+	<bean id="authenticationEntryPoint" class="com.jeefuse.system.security.service.spring.CustomLoginUrlAuthenticationEntryPoint">
+		<property name="loginFormUrl" value="/system/login.vhtml" />
+	</bean>
+	
+	<!--访问拒绝处理.若是ajax请求,则返回json格式的拒绝提示信息-->
+	<bean id="accessDeniedHandler" class="com.jeefuse.system.security.service.spring.CustomAccessDeniedHandlerImpl">
+		<property name="errorPage" value="/common/403.jsp" />
+	</bean>
+
+	<!-- 表单登录 -->
+	<bean id="formLoginFilter" class="com.jeefuse.system.security.service.spring.EnhanceUsernamePasswordAuthenticationFilter">
+		<property name="authenticationManager" ref="authenticationManager" />
+		<property name="authenticationFailureHandler" ref="failureHandler" />
+		<property name="authenticationSuccessHandler" ref="successHandler" />
+		<property name="filterProcessesUrl" value="/goolov_security_check"></property>
+	</bean>
+
+	<!-- 认证成功-->  
+	<bean id="successHandler" class="com.jeefuse.system.security.service.spring.OnRequestAuthenticationSuccessHandler">  
+		<property name="defaultTargetUrl" value="/system/main.vhtml" />  
+		<property name="alwaysUseDefaultTargetUrl" value="false" />  
+	</bean>  
+     
+	<!-- 认证失败 -->  
+	<bean id="failureHandler" class="com.jeefuse.system.security.service.spring.OnRequestAuthenticationFailureHandler">  
+		<property name="defaultFailureUrl" value="/system/login.vhtml?error=1" />  
+	</bean>
+	
+	<!-- 认证管理器 -->
+	<s:authentication-manager alias="authenticationManager" >
+		<!-- 认证管理器提供者,对用户信息的认证-->
+		<s:authentication-provider ref="dynamicEncAuthenticationProvider">
+		</s:authentication-provider>
+	</s:authentication-manager>
+	
+	<bean id="dynamicEncAuthenticationProvider" class="com.jeefuse.system.security.service.spring.EnhanceDaoAuthenticationProvider">
+		<property name="userDetailsService" ref="userDetailsService" />
+	</bean>
+	
+	
+	<!-- 用户认证实现 -->
+	<bean id="userDetailsService" class="com.jeefuse.system.security.service.spring.UserDetailServiceImpl" />
+	
+	<!-- 认证与授权 -->
+	<bean id="resourceSecurityInterceptor" class="org.springframework.security.web.access.intercept.FilterSecurityInterceptor">  
+		<!-- 认证管理器，实现用户认证的入口 -->
+		<property name="authenticationManager" ref="authenticationManager" />
+		<!-- 访问决策器，决定某个用户具有的角色，是否有足够的权限去访问某个资源 -->
+		<property name="accessDecisionManager" ref="accessDecisionManager" />
+		<!-- 资源控制定义，即定义某一资源可以被哪些角色访问 -->
+		<property name="securityMetadataSource" ref="secureInvocationDefinitionSource" />
+	</bean>
+
+	<!-- 访问决策器，决定某个用户具有的角色，是否有足够的权限去访问某个资源, 将授权名称的默认前缀由ROLE_改为"".  -->  
+	<bean id="accessDecisionManager"  class="org.springframework.security.access.vote.AffirmativeBased">
+		<property name="allowIfAllAbstainDecisions" value="false" />
+		<property name="decisionVoters">
+			<list>
+				<bean class="org.springframework.security.access.vote.RoleVoter">
+					<property name="rolePrefix" value="" />
+				</bean>
+				<bean class="org.springframework.security.access.vote.AuthenticatedVoter" />
+			</list>
+		</property>
+	</bean>
+	
+	<!-- 资源控制定义 -->
+	<bean id="secureInvocationDefinitionSource" class="com.jeefuse.system.security.service.spring.UrlDefindInvocationSecurityMetadataSource" />
+	
+	<!--JCaptcha验证码服务 -->
+	<bean id="captchaService" class="com.octo.captcha.service.image.DefaultManageableImageCaptchaService">
+		<property name="captchaEngine">
+			<bean class="com.jeefuse.base.web.jcaptcha.ImageEngine" />
+		</property>
+		<!-- 默认生成的图片180秒过期 , 可另行设置-->
+		<property name="minGuarantedStorageDelayInSeconds" value="300" />
+	</bean>
+
+</beans>

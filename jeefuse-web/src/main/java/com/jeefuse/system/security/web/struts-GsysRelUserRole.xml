@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    
+	<!-- GsysRelUserRole action manager-->
+	<package name="gsysRelUserRole" extends="system"  namespace="/system/security/gsysRelUserRole">
+        <default-class-ref class="com.jeefuse.system.security.web.action.GsysRelUserRoleAction"/>
+        
+        <action name="manage" >
+            <result name="success">/WEB-INF/content/system/security/gsysRelUserRole/gsysRelUserRole-manager.jsp</result>
+        </action>
+        <action name="input" >
+        	<result name="success">/WEB-INF/content/system/security/gsysRelUserRole/gsysRelUserRole-input.jsp</result>
+        </action>
+        <action name="edit" method="edit">
+        	<result name="success">/WEB-INF/content/system/security/gsysRelUserRole/gsysRelUserRole-input.jsp</result>
+        </action>
+        <action name="getOutJson" method="getOutJson"/>
+        <action name="listOutJson" method="listOutJson"/>
+        <action name="saveOutJson" method="saveOutJson"/>
+        <action name="deleteOutJson" method="deleteOutJson"/>
+        <action name="deleteAllOutJson" method="deleteAllOutJson"/>
+        <action name="exportExcelFile" method="exportExcelFile"/>
+        <action name="importExcelFile" method="importExcelFile">
+        	<result name="success">/WEB-INF/content/system/security/gsysRelUserRole/gsysRelUserRole-importExcel.jsp</result>
+        </action>
+        <action name="importExcelFileProcess" method="importExcelFileProcess"/>
+	</package>
+	
+</struts>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<functions xmlns="http://www.goolov.org/schema/function" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.goolov.org/schema/function goolov.mda.function.xsd">
+	<function>
+		<id>P_system_log</id>
+		<name>com.jeefuse.system.log管理</name>
+		<descript>com.jeefuse.system.log管理</descript>
+		<type>menu</type>
+		<orderNum>1</orderNum>
+	</function>
+	<function>
+		<packageId>P_system_log</packageId>
+		<id>P_system_log_gsysLoginlog</id>
+		<name>登入日志管理</name>
+		<descript>登入日志管理</descript>
+		<type>menu</type>
+		<orderNum>1</orderNum>
+	</function>
+	<function>
+		<packageId>P_system_log_gsysLoginlog</packageId>
+		<id>F_system_log_gsysLoginlog_manage</id>
+		<name>登入日志 manage</name>
+		<descript>登入日志 manage</descript>
+		<url>/system/log/gsysLoginlog/manage.vhtml</url>
+		<type>action</type>
+		<orderNum>1</orderNum>
+		<qualifyName>com.jeefuse.system.log.model.GsysLoginlog</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_log_gsysLoginlog</packageId>
+		<id>F_system_log_gsysLoginlog_input</id>
+		<name>登入日志 input</name>
+		<descript>登入日志 input</descript>
+		<url>/system/log/gsysLoginlog/input.vhtml</url>
+		<type>action</type>
+		<orderNum>2</orderNum>
+		<qualifyName>com.jeefuse.system.log.model.GsysLoginlog</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_log_gsysLoginlog</packageId>
+		<id>F_system_log_gsysLoginlog_saveOutJson</id>
+		<name>登入日志 edit</name>
+		<descript>登入日志 edit</descript>
+		<url>/system/log/gsysLoginlog/saveOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>3</orderNum>
+		<qualifyName>com.jeefuse.system.log.model.GsysLoginlog</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_log_gsysLoginlog</packageId>
+		<id>F_system_log_gsysLoginlog_getOutJson</id>
+		<name>登入日志 getOutJson</name>
+		<descript>登入日志 getOutJson</descript>
+		<url>/system/log/gsysLoginlog/getOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>4</orderNum>
+		<qualifyName>com.jeefuse.system.log.model.GsysLoginlog</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_log_gsysLoginlog</packageId>
+		<id>F_system_log_gsysLoginlog_listOutJson</id>
+		<name>登入日志 listOutJson</name>
+		<descript>登入日志 listOutJson</descript>
+		<url>/system/log/gsysLoginlog/listOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>5</orderNum>
+		<qualifyName>com.jeefuse.system.log.model.GsysLoginlog</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_log_gsysLoginlog</packageId>
+		<id>F_system_log_gsysLoginlog_saveOutJson</id>
+		<name>登入日志 saveOutJson</name>
+		<descript>登入日志 saveOutJson</descript>
+		<url>/system/log/gsysLoginlog/saveOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>6</orderNum>
+		<qualifyName>com.jeefuse.system.log.model.GsysLoginlog</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_log_gsysLoginlog</packageId>
+		<id>F_system_log_gsysLoginlog_deleteOutJson</id>
+		<name>登入日志 deleteOutJson</name>
+		<descript>登入日志 deleteOutJson</descript>
+		<url>/system/log/gsysLoginlog/deleteOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>7</orderNum>
+		<qualifyName>com.jeefuse.system.log.model.GsysLoginlog</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_log_gsysLoginlog</packageId>
+		<id>F_system_log_gsysLoginlog_deleteAllOutJson</id>
+		<name>登入日志 deleteAllOutJson</name>
+		<descript>登入日志 deleteAllOutJson</descript>
+		<url>/system/log/gsysLoginlog/deleteAllOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>8</orderNum>
+		<qualifyName>com.jeefuse.system.log.model.GsysLoginlog</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_log_gsysLoginlog</packageId>
+		<id>F_system_log_gsysLoginlog_deleteAllOutJson</id>
+		<name>登入日志 exportFile</name>
+		<descript>登入日志 exportFile</descript>
+		<url>/system/log/gsysLoginlog/deleteAllOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>9</orderNum>
+		<qualifyName>com.jeefuse.system.log.model.GsysLoginlog</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_log_gsysLoginlog</packageId>
+		<id>F_system_log_gsysLoginlog_importExcelFile</id>
+		<name>登入日志 importExcelFile</name>
+		<descript>登入日志 importExcelFile</descript>
+		<url>/system/log/gsysLoginlog/importExcelFile.vhtml</url>
+		<type>action</type>
+		<orderNum>10</orderNum>
+		<qualifyName>com.jeefuse.system.log.model.GsysLoginlog</qualifyName>
+	</function>
+	
+</functions>

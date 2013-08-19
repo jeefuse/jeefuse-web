@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    
+	<!-- systemInfo action manager-->
+	<package name="systemInfo" extends="system"  namespace="/system/systemInfo">
+        <default-class-ref class="com.jeefuse.system.monitor.web.action.SystemInfoAction"/>
+        
+        <action name="index" method="index">
+            <result name="success">/WEB-INF/content/system/systemInfo/systemInfo.jsp</result>
+        </action>
+        
+        <action name="onlineSessionList" method="onlineSessionList">
+        	<result name="success">/WEB-INF/content/system/systemInfo/onlineSessionList.jsp</result>
+        </action>
+        <action name="onlineSessionListOutJson" method="onlineSessionListOutJson"/>
+      
+	</package>
+	
+</struts>

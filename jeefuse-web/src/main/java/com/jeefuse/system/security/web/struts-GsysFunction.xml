@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    
+	<!-- GsysFunction action manager-->
+	<package name="gsysFunction" extends="system"  namespace="/system/security/gsysFunction">
+        <default-class-ref class="com.jeefuse.system.security.web.action.GsysFunctionAction"/>
+        
+        <action name="manage" method="manage">
+            <result name="success">/WEB-INF/content/system/security/gsysFunction/gsysFunction-manager.jsp</result>
+        </action>
+        <action name="input" method="edit">
+        	<result name="success">/WEB-INF/content/system/security/gsysFunction/gsysFunction-input.jsp</result>
+        </action>
+        <action name="edit" method="edit">
+        	<result name="success">/WEB-INF/content/system/security/gsysFunction/gsysFunction-input.jsp</result>
+        </action>
+        <action name="getOutJson" method="getOutJson"/>
+        <action name="listOutJson" method="listOutJson"/>
+        <action name="listTreeOutJson" method="listTreeOutJson"/>
+        <action name="listTreeGridOutJson" method="listTreeGridOutJson"/>
+        <action name="saveOutJson" method="saveOutJson"/>
+        <action name="updateOutJson" method="updateOutJson"/>
+        <action name="deleteOutJson" method="deleteOutJson"/>
+        <action name="deleteDescendantOutJson" method="deleteDescendantOutJson"/>
+        <action name="deleteAllOutJson" method="deleteAllOutJson"/>
+        <!-- import export -->
+        <action name="exportExcelFile" method="exportExcelFile"/>
+        <action name="importExcelFile" method="importExcelFile">
+        	<result name="success">/WEB-INF/content/system/security/gsysFunction/gsysFunction-importExcel.jsp</result>
+        </action>
+        <action name="importExcelFileProcess" method="importExcelFileProcess"/>
+        <action name="listTreeOutForSelParentJson" method="listTreeOutForSelParentJson"/>
+	</package>
+	
+</struts>

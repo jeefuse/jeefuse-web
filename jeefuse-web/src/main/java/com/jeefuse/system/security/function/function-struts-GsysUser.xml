@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<functions xmlns="http://www.goolov.org/schema/function" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.goolov.org/schema/function goolov.mda.function.xsd">
+	<function>
+		<packageId>P_system_security_gsysUser</packageId>
+		<id>F_system_security_gsysUser_manage</id>
+		<name>GsysUser manage</name>
+		<descript>GsysUser manage</descript>
+		<url>/system/security/gsysUser/manage.vhtml</url>
+		<type>action</type>
+		<orderNum>1</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysUser</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysUser</packageId>
+		<id>F_system_security_gsysUser_input</id>
+		<name>GsysUser input</name>
+		<descript>GsysUser input</descript>
+		<url>/system/security/gsysUser/input.vhtml</url>
+		<type>action</type>
+		<orderNum>2</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysUser</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysUser</packageId>
+		<id>F_system_security_gsysUser_saveOutJson</id>
+		<name>GsysUser edit</name>
+		<descript>GsysUser edit</descript>
+		<url>/system/security/gsysUser/saveOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>3</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysUser</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysUser</packageId>
+		<id>F_system_security_gsysUser_getOutJson</id>
+		<name>GsysUser getOutJson</name>
+		<descript>GsysUser getOutJson</descript>
+		<url>/system/security/gsysUser/getOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>4</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysUser</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysUser</packageId>
+		<id>F_system_security_gsysUser_listOutJson</id>
+		<name>GsysUser listOutJson</name>
+		<descript>GsysUser listOutJson</descript>
+		<url>/system/security/gsysUser/listOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>5</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysUser</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysUser</packageId>
+		<id>F_system_security_gsysUser_saveOutJson</id>
+		<name>GsysUser saveOutJson</name>
+		<descript>GsysUser saveOutJson</descript>
+		<url>/system/security/gsysUser/saveOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>6</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysUser</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysUser</packageId>
+		<id>F_system_security_gsysUser_deleteOutJson</id>
+		<name>GsysUser deleteOutJson</name>
+		<descript>GsysUser deleteOutJson</descript>
+		<url>/system/security/gsysUser/deleteOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>7</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysUser</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysUser</packageId>
+		<id>F_system_security_gsysUser_deleteAllOutJson</id>
+		<name>GsysUser deleteAllOutJson</name>
+		<descript>GsysUser deleteAllOutJson</descript>
+		<url>/system/security/gsysUser/deleteAllOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>8</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysUser</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysUser</packageId>
+		<id>F_system_security_gsysUser_importExcelFile</id>
+		<name>GsysUser importExcelFile</name>
+		<descript>GsysUser importExcelFile</descript>
+		<url>/system/security/gsysUser/importExcelFile.vhtml</url>
+		<type>action</type>
+		<orderNum>10</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysUser</qualifyName>
+	</function>
+	
+</functions>

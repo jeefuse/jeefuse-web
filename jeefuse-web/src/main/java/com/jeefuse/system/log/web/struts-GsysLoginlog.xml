@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    
+	<!-- 登入日志 action manager-->
+	<package name="gsysLoginlog" extends="system"  namespace="/system/log/gsysLoginlog">
+        <default-class-ref class="com.jeefuse.system.log.web.action.GsysLoginlogAction"/>
+        
+        <action name="manage" method="manage">
+            <result name="success">/WEB-INF/content/system/log/gsysLoginlog/gsysLoginlog-manager.jsp</result>
+        </action>
+        <action name="input" method="edit">
+        	<result name="success">/WEB-INF/content/system/log/gsysLoginlog/gsysLoginlog-input.jsp</result>
+        </action>
+        <action name="edit" method="edit">
+        	<result name="success">/WEB-INF/content/system/log/gsysLoginlog/gsysLoginlog-input.jsp</result>
+        </action>
+        <action name="getOutJson" method="getOutJson"/>
+        <action name="listOutJson" method="listOutJson"/>
+        <action name="saveOutJson" method="saveOutJson"/>
+        <action name="updateOutJson" method="updateOutJson"/>
+        <action name="deleteOutJson" method="deleteOutJson"/>
+        <action name="deleteAllOutJson" method="deleteAllOutJson"/>
+		 <!-- import export -->
+        <action name="exportExcelFile" method="exportExcelFile"/>
+        <action name="importExcelFile" method="importExcelFile">
+        	<result name="success">/WEB-INF/content/system/log/gsysLoginlog/gsysLoginlog-importExcel.jsp</result>
+        </action>
+        <action name="importExcelFileProcess" method="importExcelFileProcess"/>
+	</package>
+	
+</struts>

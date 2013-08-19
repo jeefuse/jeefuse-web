@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<functions xmlns="http://www.goolov.org/schema/function" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.goolov.org/schema/function goolov.mda.function.xsd">
+	<function>
+		<packageId>P_system_security_gsysRelRoleFunction</packageId>
+		<id>F_system_security_gsysRelRoleFunction_manage</id>
+		<name>GsysRelRoleFunction manage</name>
+		<descript>GsysRelRoleFunction manage</descript>
+		<url>/system/security/gsysRelRoleFunction/manage.vhtml</url>
+		<type>action</type>
+		<orderNum>1</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRelRoleFunction</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysRelRoleFunction</packageId>
+		<id>F_system_security_gsysRelRoleFunction_input</id>
+		<name>GsysRelRoleFunction input</name>
+		<descript>GsysRelRoleFunction input</descript>
+		<url>/system/security/gsysRelRoleFunction/input.vhtml</url>
+		<type>action</type>
+		<orderNum>2</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRelRoleFunction</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysRelRoleFunction</packageId>
+		<id>F_system_security_gsysRelRoleFunction_saveOutJson</id>
+		<name>GsysRelRoleFunction edit</name>
+		<descript>GsysRelRoleFunction edit</descript>
+		<url>/system/security/gsysRelRoleFunction/saveOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>3</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRelRoleFunction</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysRelRoleFunction</packageId>
+		<id>F_system_security_gsysRelRoleFunction_getOutJson</id>
+		<name>GsysRelRoleFunction getOutJson</name>
+		<descript>GsysRelRoleFunction getOutJson</descript>
+		<url>/system/security/gsysRelRoleFunction/getOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>4</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRelRoleFunction</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysRelRoleFunction</packageId>
+		<id>F_system_security_gsysRelRoleFunction_listOutJson</id>
+		<name>GsysRelRoleFunction listOutJson</name>
+		<descript>GsysRelRoleFunction listOutJson</descript>
+		<url>/system/security/gsysRelRoleFunction/listOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>5</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRelRoleFunction</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysRelRoleFunction</packageId>
+		<id>F_system_security_gsysRelRoleFunction_saveOutJson</id>
+		<name>GsysRelRoleFunction saveOutJson</name>
+		<descript>GsysRelRoleFunction saveOutJson</descript>
+		<url>/system/security/gsysRelRoleFunction/saveOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>6</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRelRoleFunction</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysRelRoleFunction</packageId>
+		<id>F_system_security_gsysRelRoleFunction_deleteOutJson</id>
+		<name>GsysRelRoleFunction deleteOutJson</name>
+		<descript>GsysRelRoleFunction deleteOutJson</descript>
+		<url>/system/security/gsysRelRoleFunction/deleteOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>7</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRelRoleFunction</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysRelRoleFunction</packageId>
+		<id>F_system_security_gsysRelRoleFunction_deleteAllOutJson</id>
+		<name>GsysRelRoleFunction deleteAllOutJson</name>
+		<descript>GsysRelRoleFunction deleteAllOutJson</descript>
+		<url>/system/security/gsysRelRoleFunction/deleteAllOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>8</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRelRoleFunction</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysRelRoleFunction</packageId>
+		<id>F_system_security_gsysRelRoleFunction_deleteAllOutJson</id>
+		<name>GsysRelRoleFunction exportFile</name>
+		<descript>GsysRelRoleFunction exportFile</descript>
+		<url>/system/security/gsysRelRoleFunction/deleteAllOutJson.vhtml</url>
+		<type>action</type>
+		<orderNum>9</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRelRoleFunction</qualifyName>
+	</function>
+	<function>
+		<packageId>P_system_security_gsysRelRoleFunction</packageId>
+		<id>F_system_security_gsysRelRoleFunction_importExcelFile</id>
+		<name>GsysRelRoleFunction importExcelFile</name>
+		<descript>GsysRelRoleFunction importExcelFile</descript>
+		<url>/system/security/gsysRelRoleFunction/importExcelFile.vhtml</url>
+		<type>action</type>
+		<orderNum>10</orderNum>
+		<qualifyName>com.jeefuse.system.security.model.GsysRelRoleFunction</qualifyName>
+	</function>
+	
+</functions>
