@@ -18,6 +18,7 @@ jeefuse-web
  
 
 Document:https://github.com/jeefuse/jeefuse-web/wiki<br>
-source: https://github.com/jeefuse/jeefuse-web.git
+source: https://github.com/jeefuse/jeefuse-web.git<br>
+download:https://github.com/jeefuse/jeefuse-web/releases<br>
 
 
